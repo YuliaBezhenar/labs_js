@@ -1,0 +1,107 @@
+@import url(lab1.css);
+@import url(lab2.css);
+@import url(lab3.css);
+@import url(lab4.css);
+
+@font-face {
+    font-family: "KyivType";
+    src: url("font/KyivTypeSans-Regular.woff") format('woff');
+}
+  
+@font-face {
+    font-family: "KyivType";
+    src: url("font/KyivTypeSans-Bold.woff") format('woff');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "KyivType";
+    src: url("font/KyivTypeSans-Medium.woff") format('woff');
+    font-weight: medium;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #fff8e9;
+    font-family: "KyivType";
+    color: #070707;
+    padding: 0 7%;
+}
+
+h1{
+    font-size: 48px;
+    font-family: "KyivType";
+    font-weight: bold;
+}
+h2{
+    font-size: 34px;
+    font-family: "KyivType";
+    font-weight: bold;
+}
+p{    
+    font-size: 18px;
+    font-family: "KyivType";
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 3% 0;
+}
+
+.header_text{
+    line-height: 2;
+    text-align: center;
+}
+
+nav{
+    width: 100%;
+    border-bottom: 2px solid #ffce2e;
+}
+
+.menu{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin: 2% 0;
+}
+
+.menu a{
+    color: #070707;
+    text-decoration: none;
+    font-size: 20px;
+}
+.menu a:hover{
+    color: #ffce2e;
+}
+.menu a:active{
+    color: #c79800;
+}
+
+
+
+
+@media (max-width: 450px) {
+    h1{
+        font-size: 24px;
+        font-family: "KyivType";
+        font-weight: bold;
+    }
+    h2{
+        font-size: 24px;
+        font-family: "KyivType";
+        font-weight: bold;
+    }
+    p{    
+        font-size: 14px;
+        font-family: "KyivType";
+    }
+    
+}

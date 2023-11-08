@@ -1,0 +1,90 @@
+
+.main_descr{
+    line-height: 1.5;
+    font-size: 18px;
+}
+.main_descr ul li{
+    margin-left: 40px;
+}
+
+.main_result{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 100%;
+    padding: 2% 0;
+}
+
+.main_button{
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    background-position: 0 0;
+    border: 1px solid #ffce2e;
+    border-radius: 11px;
+    color: #ffce2e;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: "KyivType";
+    font-weight: bold;
+    padding: 1% 5%;
+    transition: border .2s ease-in-out,box-shadow .2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    word-break: break-word;
+}
+.main_button:active,
+.main_button:hover,
+.main_button:focus {
+  outline: 0;
+}
+
+
+.main_button:active {
+  background-color: #ffce2e;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+  color: #FFFFFF;
+}
+
+.main_button:hover {
+  background-color: #ffce2e;
+  border-color: #c79800;
+  color: #FFFFFF;
+}
+
+.main_button:active:hover {
+  background-color: #c79800;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+  color: #FFFFFF;
+}
+
+#birthdayInfo {
+    padding: 2% 0;
+    font-size: 24px;
+    text-align: left;
+    width: 80%;
+    line-height: 1.5;
+}
+
+.birthdayName {
+    color: #ffce2e;
+    font-weight: bold;
+}
+
+
+@media (max-width: 500px) {
+    .main_descr{
+        font-size: 14px;
+    }
+
+    .main_button{
+        width: 100%;
+    }
+
+    #birthdayInfo {
+        width: 100%;
+        font-size: 18px;
+    }
+}
