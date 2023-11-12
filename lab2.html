@@ -25,8 +25,34 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <p>Тут завдання лаби 2</p>
+    <main class="main_lab2">
+        <p>
+            На Вашій сторінці є посилання. При наведенні на нього миші вивести додаткову інформацію про це посилання в діалоговому вікні.
+            <br>Ввести два числа (поля вводу) і слово "сума", "різниця", "добуток" чи "ділення" (з клавіатури). Вивести результат виконання операції.
+            Передбачити можливість неправильного вводу слова користувачем.
+        </p>
+        <section class="task1">
+            <a href="" title="Тут інформація про посилання" onmouseover = "info()">Наведіть мишу сюди</a>
+        </section>
+        <section class="task2">
+            <form action="">
+                <label for="number1">
+                    Введіть перше число:
+                    <input class="number" type="number" required id="number1">
+                </label>
+            
+                <label for="number2">
+                    Введіть друге число:
+                    <input class="number" type="number" required id="number2">
+                </label>
+            
+                <label for="operation">
+                    Введіть операцію (сума, різниця, добуток, ділення):
+                    <input  class="operation" type="text" id="operation">
+                </label>
+            </section>
+            <button type="submit" class="button_task2" onclick="calculate()">Обчислити</button>                    
+            </form>
     </main>
     
 </body>

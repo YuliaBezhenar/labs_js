@@ -18,6 +18,7 @@
 .main_button{
     display: flex;
     align-items: center;
+    text-align: center;
     background-color: #ffffff;
     background-position: 0 0;
     border: 1px solid #ffce2e;
