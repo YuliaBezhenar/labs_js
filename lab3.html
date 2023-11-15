@@ -25,7 +25,44 @@
         </nav>
     </header>
     <main>
-        <p>Тут завдання лаби 3</p>
+        <section class="lab3_task1">
+            <h3>Завдання 1.</h3>
+        <p><br>На Вашій сторінці є поле вводу, у яке через кому вводяться назви країн.
+            <br>При натисканні на кнопку зробіть так, щоб ці країни записалися в список ul під поле (кожна країна – окремий li).</p>
+            <label for="countriesInput">
+                <p>Введіть країни:</p>
+                <input class="countries_input" type="text" id="countriesInput">
+            </label>
+        
+            <button class="button_submit" onclick="addCountries()">Вивести список країн</button>
+        
+            <ul id="countriesList"></ul>
+        </section>
+
+        <section class="lab3_task2">
+            <h3>Завдання 2.</h3>
+            <p><br>Дана таблиця з числами. При натисканні на кнопку знайдіть комірку, в якій зберігається максимальне число, і зробіть її фон червоним.</p>
+            <table class="lab3_table" id="Table">
+                <tr>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>35</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>35</td>
+                    <td>50</td>
+                    <td>45</td>
+                </tr>
+            </table>
+        
+            <button class="button_submit" onclick="MaxCell()">Знайти максимальну комірку</button>
+        </section>
+        
     </main>
 </body>
 </html>

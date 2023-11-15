@@ -31,28 +31,30 @@
             <br>Ввести два числа (поля вводу) і слово "сума", "різниця", "добуток" чи "ділення" (з клавіатури). Вивести результат виконання операції.
             Передбачити можливість неправильного вводу слова користувачем.
         </p>
-        <section class="task1">
+        <section class="lab2_task1">
             <a href="" title="Тут інформація про посилання" onmouseover = "info()">Наведіть мишу сюди</a>
         </section>
-        <section class="task2">
+        <section class="lab2_task2">
             <form action="">
-                <label for="number1">
-                    Введіть перше число:
-                    <input class="number" type="number" required id="number1">
-                </label>
-            
-                <label for="number2">
-                    Введіть друге число:
-                    <input class="number" type="number" required id="number2">
-                </label>
-            
-                <label for="operation">
-                    Введіть операцію (сума, різниця, добуток, ділення):
-                    <input  class="operation" type="text" id="operation">
-                </label>
-            </section>
-            <button type="submit" class="button_task2" onclick="calculate()">Обчислити</button>                    
+                <section class="inputs">
+                    <label for="number1">
+                        Введіть перше число:
+                        <input class="number" type="number" required id="number1">
+                    </label>
+                
+                    <label for="number2">
+                        Введіть друге число:
+                        <input class="number" type="number" required id="number2">
+                    </label>
+                
+                    <label for="operation">
+                        Введіть операцію (сума, різниця, добуток, ділення):
+                        <input  class="operation" type="text" id="operation">
+                    </label>
+                </section>                
+                <button type="submit" class="button_submit" onclick="calculate()">Обчислити</button>          
             </form>
+        </section>
     </main>
     
 </body>

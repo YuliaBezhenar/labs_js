@@ -1,0 +1,77 @@
+.lab4_task1{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding: 2% 0;
+}
+
+.lab4_table {
+    font-size: 20px;
+    width: 75%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    margin: 2% 0;
+}
+.lab4_table th, td {
+    border: 1px solid #ffce2e;
+    padding: 8px;
+    text-align: center;
+}
+.lab4_table td:hover{
+    background-color: #ddd;
+}
+
+.button_lab4{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #ffffff;
+    background-position: 0 0;
+    border: 1px solid #ffce2e;
+    border-radius: 11px;
+    color: #ffce2e;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: "KyivType";
+    font-weight: bold;
+    padding: 1% 5%;
+    transition: border .2s ease-in-out,box-shadow .2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    word-break: break-word;
+}
+.button_lab4:active,
+.button_lab4:hover,
+.button_lab4:focus {
+  outline: 0;
+}
+
+
+.button_lab4:active {
+  background-color: #ffce2e;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+  color: #FFFFFF;
+}
+
+.button_lab4:hover {
+  background-color: #ffce2e;
+  border-color: #c79800;
+  color: #FFFFFF;
+}
+
+.button_lab4:active:hover {
+  background-color: #c79800;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+  color: #FFFFFF;
+}
+
+@media (max-width: 500px) {
+    .button_lab4{
+        width: 100%;
+    }
+    .lab4_table{
+        width: 100%;
+    }
+}

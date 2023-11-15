@@ -8,31 +8,31 @@ arrFriend[0] = {
 
 arrFriend[1] = {
     Name: "Yana",
-    Date: "08.11.2023",
+    Date: "15.11.2023",
     Phone: ""
 };
 
 arrFriend[2] = {
     Name: "Anatoliy",
-    Date: "11.11.2023",
+    Date: "18.11.2023",
     Phone: "0963029292"
 };
 
 arrFriend[3] = {
     Name: "Vlada",
-    Date: "08.11.2023",
+    Date: "09.11.2023",
     Phone: "0662029292"
 };
 
 arrFriend[4] = {
     Name: "Bogdan",
-    Date: "04.11.2023",
+    Date: "15.11.2023",
     Phone: "0995052233"
 };
 
 arrFriend[5] = {
     Name: "Diana",
-    Date: "11.11.2023",
+    Date: "15.11.2023",
     Phone: ""
 };
 
