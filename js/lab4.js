@@ -1,95 +1,40 @@
-// Клас Машина
+//клас машини
 class Car {
     constructor(color, brand, model) {
         this.color = color;
         this.brand = brand;
         this.model = model;
     }
+
+    show() {
+        let html = "";
+        html+="<tr>";
+        html+="<td>" + this.color + "</td>";
+        html+="<td>" + this.brand + "</td>";
+        html+="<td>" + this.model + "</td>";
+        html+="</tr>";
+        return html;
+    }
 }
 
-// Створення масиву об'єктів класу Машина
+//створення масиву об'єктів класу
 var carsArray = [
     new Car("Червоний", "Toyota", "Camry"),
-    new Car("Синій", "Honda", "Civic"),
-    new Car("Зелений", "Ford", "Focus"),
-    new Car("Чорний", "BMW", "X5"),
+    new Car("Чорний", "Honda", "Civic"),
+    new Car("Синій", "Ford", "Focus"),
+    new Car("Сірий", "Mazda", "CX-30"),
     new Car("Білий", "Mercedes", "E-Class"),
 ];
 
 function displayCarInfo() {
-
-    var tableBody = document.querySelector('#carsTable tbody');
-    
-    tableBody.innerHTML = '';
-
-    // Проходимося по кожному об'єкту в масиві і виводимо його в таблицю
-    for (var i = 0; i < carsArray.length; i++) {
-        var car = carsArray[i];
-
-        var row = tableBody.insertRow(i);
-        var cellColor = row.insertCell(0);
-        var cellBrand = row.insertCell(1);
-        var cellModel = row.insertCell(2);
-
-        cellColor.textContent = car.color;
-        cellBrand.textContent = car.brand;
-        cellModel.textContent = car.model;
-
-    // Додавання даних в таблицю
-    /*for (var j = 0; j < carsArray.length; j++) {
-        var carRow = table.insertRow(j + 1);
-        var car = carsArray[j];
-
-        var colorCell = carRow.insertCell(0);
-        colorCell.textContent = car.color;
-
-        var brandCell = carRow.insertCell(1);
-        brandCell.textContent = car.brand;
-
-        var modelCell = carRow.insertCell(2);
-        modelCell.textContent = car.model;*/
+    //таблиця
+    var table = "";
+    table+="<table class='lab4_table'>";
+    table += "<tr class=> <th>Колір</th> <th>Марка</th> <th>Модель</th> </tr> "
+    for (var i=0; i< carsArray.length; i++){
+            table+=carsArray[i].show();
     }
-
-    // Виведення таблиці на сторінку
-    //document.body.appendChild(table);
+    table+="</table>";
+    document.getElementById('result').innerHTML=table;
+    html="";
 }
-
-
-/*
-// Клас Машина
-        function Car(color, brand, model) {
-            this.color = color;
-            this.brand = brand;
-            this.model = model;
-        }
-
-        // Створюємо масив об'єктів Машина
-        var carsArray = [
-            new Car('Червоний', 'Toyota', 'Camry'),
-            new Car('Синій', 'Honda', 'Civic'),
-            new Car('Чорний', 'Ford', 'Focus'),
-            // Додайте більше об'єктів за потребою
-        ];
-
-        // Функція для виведення інформації про машини
-        function displayCarsInfo() {
-            var tableBody = document.querySelector('#carsTable tbody');
-
-            // Очищаємо таблицю перед виведенням нової інформації
-            tableBody.innerHTML = '';
-
-            // Проходимося по кожному об'єкту в масиві і виводимо його в таблицю
-            for (var i = 0; i < carsArray.length; i++) {
-                var car = carsArray[i];
-
-                var row = tableBody.insertRow(i);
-                var cellColor = row.insertCell(0);
-                var cellBrand = row.insertCell(1);
-                var cellModel = row.insertCell(2);
-
-                cellColor.textContent = car.color;
-                cellBrand.textContent = car.brand;
-                cellModel.textContent = car.model;
-            }
-        }
-*/

@@ -21,6 +21,12 @@
     background-color: #ddd;
 }
 
+.result_table{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .button_lab4{
     display: flex;
     align-items: center;
